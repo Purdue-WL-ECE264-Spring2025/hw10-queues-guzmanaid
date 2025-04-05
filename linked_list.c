@@ -50,6 +50,7 @@ void insert_at_tail(struct linked_list *list, size_t value)
       current_node = current_node -> next;
     }
     current_node -> next = node;
+    free(node);
   }
 }
 
